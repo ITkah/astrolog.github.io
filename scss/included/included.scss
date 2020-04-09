@@ -1,0 +1,209 @@
+.included {
+    .title-xl {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .btn-wrap {
+        margin-top: 30px;
+    }
+    a {
+        padding: 15px 60px;
+        border: 2px solid #EF1434;
+        background: transparent;
+        color: #EF1434;
+        @media (max-width: 990px) {
+            padding: 10px 35px;
+        }
+        &:hover {
+            background: #EF1434;
+            color: #fff;
+        }
+    }
+}
+
+.included-wrap {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+    position: relative;
+    &::before {
+        content: '';
+        height: 220px;
+        width: 2px;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        display: block;
+        background: #EF1434;
+    }
+    &::after {
+        content: '';
+        height: 2px;
+        width: 190px;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        display: block;
+        background: #EF1434;
+    }
+}
+
+.included-box {
+    background: #fff;
+    padding: 25px 80px;
+    @media (max-width: 990px) {
+        padding: 20px 15px;
+    }
+    ol {
+        padding: 0;
+        margin: 0;
+        padding-left: 15px;
+    }
+    li {
+        color: #1A1A1A;
+        font: normal .95rem/22px 'Montserrat', sans-serif;
+        margin-bottom: 20px;
+        @media (max-width: 990px) {
+            margin-bottom: 15px;
+            font-size: .87rem;
+        }
+    }
+    li:last-child {
+        margin: 0;
+    }
+}
+
+.usluga-item {
+    @media (max-width: 990px) {
+        background: #fff;
+    }
+    .title-xl {
+        margin-bottom: 30px;
+        @media (max-width: 990px) {
+            padding-top: 30px;
+        }
+    }
+    .usluga-item-wrap {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        position: relative;
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    .usluga-item-img {
+        padding: 20px;
+        position: relative;
+        border-bottom: 2px solid #EF1434;
+        border-right: 2px solid #EF1434;
+        z-index: 9;
+        left: 20px;
+        top: 10px;
+        height: 350px;
+        &::before {
+            content: '';
+            height: 150px;
+            width: 2px;
+            left: 0;
+            bottom: 0;
+            position: absolute;
+            display: block;
+            background: #EF1434;
+        }
+        &::after {
+            content: '';
+            height: 2px;
+            width: 190px;
+            right: 0;
+            top: 0;
+            position: absolute;
+            display: block;
+            background: #EF1434;
+        }
+        img {
+            max-width:100%;
+            width: 470px;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .mod-usluga {
+        display: none;
+        padding: 10px;
+        height: 160px;
+        width: 190px;
+        &::before {
+            content: '';
+            height: 100px;
+        }
+        &::after {
+            content: '';
+            width: 140px;
+        }
+        @media (max-width: 990px) {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            left: 0;
+            top: 0;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.desk-usluga {
+    @media (max-width: 990px) {
+        display: none;
+    }
+}
+
+.usluga-item-info {
+    background: #fff;
+    padding: 25px 50px 25px 100px;
+    position: relative;
+    left: -50px;
+    @media (max-width: 990px) {
+        left: 0;
+        padding: 0 0 30px 0;
+    }
+    .usluga-title {
+        font-size: 1.125rem;
+        margin-bottom: 15px;
+        @media (max-width: 990px) {
+            font-size: 1rem;
+            font-weight: bold;
+            line-height: 22px;
+        }
+    }
+    .text-simple {
+        text-align: justify;
+    }
+    .price-wrapper {
+        margin-top: 20px;
+        display: flex;
+        @media (max-width: 990px) {
+            flex-direction: column-reverse;
+        }
+        a {
+            padding: 15px 60px;
+            margin-right: 30px;
+            @media (max-width: 990px) {
+                margin: 0;
+                font-size: 1.125rem;
+                width: 140px;
+                margin-top: 10px;
+            }
+        }
+        p {
+            margin-bottom: 8px;
+        }
+        p:last-child {
+            margin: 0;
+            @media (max-width: 990px) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

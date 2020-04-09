@@ -1,0 +1,92 @@
+.bonus {
+    .container {
+        @media (max-width: 990px) {
+            padding: 0 10px;
+        }
+    }
+}
+.bonus-container {
+    max-width: 470px;
+    margin: 0 auto;
+    padding: 30px 60px;
+    background: #fff;
+    text-align: center;
+    position: relative;
+    @media (max-width: 990px) {
+        padding: 20px;
+    }
+    br {
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+    &::after {
+        content: '';
+        height: 180px;
+        width: 1px;
+        background: #EF1434;
+        display: block;
+        bottom: -20px;
+        right: -20px;
+        position: absolute;
+        z-index: 2;
+        @media (max-width: 990px) {
+            bottom: -10px;
+            right: -10px;
+            height: 60%;
+        }
+    }
+    &::before {
+        content: '';
+        height: 1px;
+        width: 420px;
+        background: #EF1434;
+        display: block;
+        bottom: -20px;
+        right: -20px;
+        position: absolute;
+        z-index: 2;
+        @media (max-width: 990px) {
+            bottom: -10px;
+            right: -10px;
+            width: 60%;
+        }
+    }
+    .title-sm {
+        margin-bottom: 15px;
+        position: relative;
+        @media (max-width: 990px) {
+            margin-bottom: 10px;
+        }
+        &::after {
+            position: absolute;
+            content: '%';
+            top: -50px;
+            right: -50px;
+            font-size: 140px;
+            color: #EF1434;
+            opacity: 0.2;
+            @media (max-width: 990px) {
+                font-size: 70px;
+                top: -28px;
+                right: -18px;
+            }
+        }
+    }
+    .text-simple {
+        margin-bottom: 15px;
+        @media (max-width: 990px) {
+            margin-bottom: 12px;
+        }
+    }
+    .link-copy {
+        color: #EF1434;
+        font: bold 1.6rem 'Merriweather Sans', sans-serif;
+        @media (max-width: 990px) {
+            font-size: 1.4rem;
+        }
+    }
+    .copy-click {
+        margin-left: 5px;
+    }
+}

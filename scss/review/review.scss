@@ -1,0 +1,136 @@
+.review {
+    .container {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    .title-xl {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .review-container {
+        margin-bottom: 40px;
+        padding: 0 40px;
+        @media (max-width: 990px) {
+            padding: 0;
+        }
+        @media (max-width: 768px) {
+            margin-bottom: 60px;
+        }
+        img {
+            object-fit: contain;
+            max-width: 100%;
+            height: auto;
+            width: 100%;
+            @media (max-width: 576px) {
+                height: 400px;
+            }
+        }
+        .slick-slide {
+            margin-right: 20px;
+            @media (max-width: 576px) {
+                margin: 0;
+            }
+        }
+    }
+    .slick-prev:before {
+        content: url(../img/icon/left.png);
+    }
+    .slick-next:before {
+        content: url(../img/icon/right.png);
+    }
+    .slick-prev {
+        left: -30px;
+    }
+    .slick-next {
+        right: 30px;
+    }
+    .slick-dots li button:before {
+        content: '';
+        height: 15px;
+        width: 15px;
+        display: block;
+        border: 1px solid #000;
+        opacity: 1;
+    }
+    .slick-dots {
+        bottom: -40px;
+    }
+    .slick-dots li.slick-active button:before {
+        background: #000;
+    }
+}
+
+
+.review-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    @media (max-width: 576px) {
+        grid-gap: 20px;
+    }
+}
+
+.container {
+    position: relative;
+}
+
+.arrow-none {
+    @media (max-width: 576px) {
+        display: none;
+    }
+}
+
+.multi-mob {
+    display: none;
+    @media (max-width: 576px) {
+        display: block;
+    }
+    .slick-slide {
+        right: -10px;
+        position: relative;
+    }
+    .slick-prev:before {
+        content: url(../img/icon/left-sm.png);
+    }
+    .slick-next:before {
+        content: url(../img/icon/right-sm.png);
+    }
+    .slick-prev{
+        left: 30%;
+        @media (max-width: 380px) {
+            left: 26%;
+        }
+    }
+    .slick-next{
+        right: 30%;
+        @media (max-width: 380px) {
+            right: 25%;
+        }
+    }
+    .slick-prev, .slick-next {
+        top: 101.8%;
+        z-index: 99;
+    }
+}
+
+.social-absolut-box {
+    position: absolute;
+    display: flex;
+    right: -30px;
+    top: 20%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 990px) {
+        display: none;
+    }
+    a {
+        margin-bottom: 15px;
+    }
+}
+
+.review-desk {
+    @media (max-width: 576px) {
+        display: none;
+    }
+}

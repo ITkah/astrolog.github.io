@@ -1,0 +1,36 @@
+
+
+.title-xl {
+    color: #1A1A1A;
+    font: bold 3.125rem 'Merriweather Sans', sans-serif;
+    @media (max-width: 1200px) {
+        font-size: 2.4rem;
+    }
+    @media (max-width: 1024px) {
+        font-size: 2.2rem;
+    }
+    @media (max-width: 576px) {
+        font-size: 1.875rem;
+    }
+}
+
+.xxl-title {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.title-sm {
+    color: #1A1A1A;
+    font: bold 1.75rem 'Merriweather Sans', sans-serif;
+    @media (max-width: 1024px) {
+        font-size: 1.5rem;
+    }
+    @media (max-width: 576px) {
+        font-size: 1.25rem;
+    }
+}
+
+.text-simple {
+    color: #1A1A1A;
+    font: normal .95rem/23px 'Montserrat', sans-serif;
+}
