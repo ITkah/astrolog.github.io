@@ -30,15 +30,15 @@ $(document).ready(function() {
       return false;
   });
 
-    $('.copy-click').click(function() {
-	    var $temp = $(".link-copy");
-	    $("body").append($temp);
-	    $temp.val($('#text').text()).select();
-	    document.execCommand("copy");
-	    $temp.remove();
+  $('.copy-click').click(function() {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($('.link-copy').text()).select();
+    document.execCommand("copy");
+    $temp.remove();
 
-	    alert('Тест скопирован!');
-  });
+    $(this).text('Тест скопирован!');
+});
   
   $('.popup-with-form').magnificPopup({
 		type: 'inline',
