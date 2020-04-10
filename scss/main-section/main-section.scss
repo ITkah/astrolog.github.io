@@ -27,7 +27,8 @@
     .main-section-img {
         @media (max-width: 768px) {
             position: relative;
-            margin-top: -50px;
+            margin-top: -30px;
+            z-index: 1;
         }
         img {
             max-width: 100%;

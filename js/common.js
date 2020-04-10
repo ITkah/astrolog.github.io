@@ -4,6 +4,13 @@ $(document).ready(function() {
        $(".backdrop").toggleClass("backdrop-active");
     });
 
+    $(".consultation").on("click", function (event) {
+      event.preventDefault();
+      var id  = $(this).attr('href'),
+          top = $(id).offset().top;
+      $('body,html').animate({scrollTop: top}, 1500);
+    });
+
     $(window).scroll(function() {
         if ($(this).scrollTop() > 2) {
             $('header').addClass("fixed-header");
@@ -30,14 +37,14 @@ $(document).ready(function() {
       return false;
   });
 
-  $('.copy-click').click(function() {
+  $('.copy-click, .link-copy').click(function() {
     var $temp = $("<input>");
     $("body").append($temp);
     $temp.val($('.link-copy').text()).select();
     document.execCommand("copy");
     $temp.remove();
 
-    $(this).text('Тест скопирован!');
+    $(".link-copy").text('Промокод скопирован!');
 });
   
   $('.popup-with-form').magnificPopup({
