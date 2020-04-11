@@ -452,7 +452,6 @@ header {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 500px;
   background: #fff;
   padding: 30px 70px 30px 100px; }
   @media (max-width: 1280px) {
