@@ -23,7 +23,7 @@
     &::after {
         content: '';
         height: 180px;
-        width: 1px;
+        width: 2px;
         background: #EF1434;
         display: block;
         bottom: -20px;
@@ -38,7 +38,7 @@
     }
     &::before {
         content: '';
-        height: 1px;
+        height: 2px;
         width: 420px;
         background: #EF1434;
         display: block;
@@ -61,6 +61,7 @@
         &::after {
             position: absolute;
             content: '%';
+            font-family: 'Montserrat', sans-serif;
             top: -50px;
             right: -50px;
             font-size: 140px;

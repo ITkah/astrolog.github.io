@@ -279,3 +279,22 @@ textarea:-ms-input-placeholder {
         left: 120px;
     }}
 }
+
+.contact-mob {
+    &::before {
+        height: 500px;
+    }
+    textarea {
+        height: 150px;
+    }
+    .contact-container {
+        grid-gap: 10px;
+    }
+    .contact-mob-img {
+        max-width: 100%;
+        height: 230px;
+        width: 180px;
+        object-fit: contain;
+        margin: 0 auto;
+    }
+}
